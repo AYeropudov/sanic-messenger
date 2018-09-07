@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/AYeropudov/sanic-messenger.svg?branch=master)](https://travis-ci.com/AYeropudov/sanic-messenger)
