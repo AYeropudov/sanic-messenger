@@ -1,0 +1,15 @@
+config:
+    target: "ws://127.0.0.1:9100/room"
+    phases:
+      - duration: 50
+        arrivalRate: 20
+    ws:
+      # Ignore SSL certificate errors
+      # - useful in *development* with self-signed certs
+      rejectUnauthorized: false
+scenarios:
+  - engine: "ws"
+    flow:
+      - send: "{\"test\":\"first\"}"
+      - think: 1
+      - send: "{\"two_test\": \"second\"}"
